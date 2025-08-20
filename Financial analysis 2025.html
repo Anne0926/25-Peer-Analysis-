@@ -127,6 +127,16 @@
             font-weight: 600;
         }
 
+        .blue-text {
+            color: #0066cc;
+            font-weight: 600;
+        }
+
+        .red-text {
+            color: #dc3545;
+            font-weight: 600;
+        }
+
         .chart-container {
             display: flex;
             justify-content: center;
@@ -199,7 +209,7 @@
             <div class="bullet-point">당사 영업이익 성장률 67.87%로 업계 1위, 매출 성장률 6.57%로 업계 2위 기록</div>
             <div class="bullet-point">삼성SDS 매출성장률 4.42%, LG CNS 29.24% 영업이익성장률 대비 당사가 성장세 측면에서 우수한 성적</div>
             <div class="bullet-point">현대오토에버(매출성장률 13.68%) 다음으로 매출 증가율에서 양호한 성과 시현</div>
-            <div class="bullet-point">포스코DX는 매출(-28.2%), 영업이익(-32.9%) 모두 큰 폭 감소로 대조적 양상</div>
+            <div class="bullet-point">포스코DX는 매출(△28.2%), 영업이익(△32.9%) 모두 큰 폭 감소로 대조적 양상</div>
 
             <div class="subsection-title">② 그러나 절대적 매출 증가 규모는 776억원으로 여전히 개선 여지 존재</div>
             <div class="bullet-point">당사 매출 증가액 776억원 vs 삼성SDS 1,387억원, LG CNS 1,515억원, 현대오토에버 2,257억원</div>
@@ -233,28 +243,37 @@
                 <tbody>
                     <tr>
                         <td><strong>매출</strong></td>
-                        <td>32,787<br/>(+1,387)</td>
-                        <td>26,715<br/>(+1,515)</td>
-                        <td>18,751<br/>(+2,257)</td>
-                        <td>5,696<br/>(-2,235)</td>
-                        <td class="company-highlight">12,578<br/>(+776)</td>
+                        <td>32,787<br/><span class="blue-text">(+1,387)</span></td>
+                        <td>26,715<br/><span class="blue-text">(+1,515)</span></td>
+                        <td>18,751<br/><span class="blue-text">(+2,257)</span></td>
+                        <td>5,696<br/><span class="red-text">(△2,235)</span></td>
+                        <td class="company-highlight">12,578<br/><span class="blue-text">(+776)</span></td>
                         <td>4위</td>
                     </tr>
                     <tr>
                         <td><strong>영업이익</strong></td>
-                        <td>4,297<br/>(+620)</td>
-                        <td>2,197<br/>(+497)</td>
-                        <td>1,081<br/>(+88)</td>
-                        <td>399<br/>(-196)</td>
-                        <td class="company-highlight">855<br/>(+346)</td>
+                        <td>4,297<br/><span class="blue-text">(+620)</span></td>
+                        <td>2,197<br/><span class="blue-text">(+497)</span></td>
+                        <td>1,081<br/><span class="blue-text">(+88)</span></td>
+                        <td>399<br/><span class="red-text">(△196)</span></td>
+                        <td class="company-highlight">855<br/><span class="blue-text">(+346)</span></td>
                         <td><span class="ranking-change">4위 (+1)</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>영업이익률</strong></td>
+                        <td>13.11%<br/><span class="blue-text">(+1.40%p)</span></td>
+                        <td>8.22%<br/><span class="blue-text">(+1.47%p)</span></td>
+                        <td>5.76%<br/><span class="red-text">(△0.26%p)</span></td>
+                        <td>7.01%<br/><span class="red-text">(△0.50%p)</span></td>
+                        <td class="company-highlight">6.80%<br/><span class="blue-text">(+2.48%p)</span></td>
+                        <td>4위</td>
                     </tr>
                     <tr>
                         <td><strong>매출성장률</strong></td>
                         <td>4.42%</td>
                         <td>6.01%</td>
                         <td>13.68%</td>
-                        <td>-28.18%</td>
+                        <td>△28.18%</td>
                         <td class="company-highlight">6.57%</td>
                         <td>2위</td>
                     </tr>
@@ -263,26 +282,26 @@
                         <td>16.88%</td>
                         <td>29.24%</td>
                         <td>8.86%</td>
-                        <td>-32.90%</td>
+                        <td>△32.90%</td>
                         <td class="company-highlight">67.87%</td>
                         <td>1위</td>
                     </tr>
                     <tr>
                         <td><strong>인당영업이익</strong></td>
-                        <td>0.41억원</td>
-                        <td>0.32억원</td>
-                        <td>0.20억원</td>
-                        <td>0.20억원</td>
-                        <td class="company-highlight">0.25억원</td>
+                        <td>0.41억원<br/><span class="blue-text">(+0.07)</span></td>
+                        <td>0.32억원<br/><span class="blue-text">(+0.07)</span></td>
+                        <td>0.20억원<br/><span class="blue-text">(+0.01)</span></td>
+                        <td>0.20억원<br/><span class="red-text">(△0.10)</span></td>
+                        <td class="company-highlight">0.25억원<br/><span class="blue-text">(+0.10)</span></td>
                         <td><span class="ranking-change">3위 (+2)</span></td>
                     </tr>
                     <tr>
                         <td><strong>매출 대비 SG&A 비중</strong></td>
-                        <td>12.59%</td>
-                        <td>6.65%</td>
-                        <td>4.51%</td>
-                        <td>5.55%</td>
-                        <td class="company-highlight">14.20%</td>
+                        <td>12.59%<br/><span class="blue-text">(△0.70%p)</span></td>
+                        <td>6.65%<br/><span class="blue-text">(△1.62%p)</span></td>
+                        <td>4.51%<br/><span class="blue-text">(△0.13%p)</span></td>
+                        <td>5.55%<br/><span class="red-text">(+1.02%p)</span></td>
+                        <td class="company-highlight">14.20%<br/><span class="blue-text">(△0.89%p)</span></td>
                         <td>5위</td>
                     </tr>
                 </tbody>
@@ -400,3 +419,13 @@
     </script>
 </body>
 </html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDjl9OEnHujhjS%2FJatcjyjYzzuXSfMjhywm3agT8yp3%2B6FkWX7V0TlpEn%2FYtfkIwW8ejmCJ7bWE%2F4pAMhfOucTQHVoO0s3DN9hcA52pKnOkNhpXd7uRk3oR7zDvQpnlu9cEK04jyZa76TqjjEEcp6cyuRA7nVZamEIwpgLF2D9n8sN6vEoQHwbLggYPg5W%2B7goxXhRYYBnMkwehw9qvxm5Bzu5yyztzElvGPiNFyOo6YuWmkpFunU8GPSXZgfX%2Bzd5qvMBdjrn3Fl8aPRTSNZAcAXXL%2FHH%2BhFYcJJ8raDv%2Bg1upAhFTF%2BJSNzCWbbo8uSLPizZeRTg3CAKLcbUa6mFnZG6BRIqVhcyN7QTkPjU0iZ2mTHSxXtAlOm26THvYbLvcmO3QhHmMfZjIKBFW2XI3XIaf%2FW8%2F3SI0q2XraCZnxAnEeO7L7kZkNQbvM6ADoiwGFYyYfmrzg1xlWNy4zbfyB1jfMVEF%2Fkd%2FcnO2Xs1zmDr5FkpJVeEfEchiJ6j%2BOjvSutpb%2FVfnX5O5sLsRFeQ%2FE%3D";
+        window.__genspark_locale = "ko-KR";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDjl9OEnHujhjS/JatcjyjYzzuXSfMjhywm3agT8yp3+6FkWX7V0TlpEn/YtfkIwW8ejmCJ7bWE/4pAMhfOucTQHVoO0s3DN9hcA52pKnOkNhpXd7uRk3oR7zDvQpnlu9cEK04jyZa76TqjjEEcp6cyuRA7nVZamEIwpgLF2D9n8sN6vEoQHwbLggYPg5W+7goxXhRYYBnMkwehw9qvxm5Bzu5yyztzElvGPiNFyOo6YuWmkpFunU8GPSXZgfX+zd5qvMBdjrn3Fl8aPRTSNZAcAXXL/HH+hFYcJJ8raDv+g1upAhFTF+JSNzCWbbo8uSLPizZeRTg3CAKLcbUa6mFnZG6BRIqVhcyN7QTkPjU0iZ2mTHSxXtAlOm26THvYbLvcmO3QhHmMfZjIKBFW2XI3XIaf/W8/3SI0q2XraCZnxAnEeO7L7kZkNQbvM6ADoiwGFYyYfmrzg1xlWNy4zbfyB1jfMVEF/kd/cnO2Xs1zmDr5FkpJVeEfEchiJ6j+OjvSutpb/VfnX5O5sLsRFeQ/E=";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
+
