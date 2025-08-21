@@ -18,7 +18,7 @@
         }
         
         .card-shadow {
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         }
         
         .metric-card {
@@ -32,7 +32,7 @@
         }
         
         .company-card:hover {
-            box-shadow: 0 8px 25px rgba(30, 64, 175, 0.15);
+            box-shadow: 0 8px 25px rgba(30, 64, 175, 0.12);
             border-color: #3b82f6;
         }
         
@@ -45,22 +45,12 @@
             background: linear-gradient(90deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
         }
         
-        .performance-indicator.positive {
-            background-color: #dcfce7;
-            color: #166534;
-            border-left: 4px solid #22c55e;
-        }
-        
-        .performance-indicator.neutral {
-            background-color: #fef3c7;
-            color: #92400e;
-            border-left: 4px solid #f59e0b;
-        }
-        
-        .performance-indicator.negative {
-            background-color: #fee2e2;
-            color: #991b1b;
-            border-left: 4px solid #ef4444;
+        .summary-item {
+            background: #f8fafc;
+            border-left: 3px solid #64748b;
+            padding: 12px 16px;
+            margin: 8px 0;
+            border-radius: 4px;
         }
         
         .strategy-point {
@@ -76,6 +66,14 @@
             border-radius: 8px;
             padding: 16px;
             margin: 12px 0;
+        }
+        
+        .posco-card {
+            border-left: 4px solid #dc2626;
+        }
+        
+        .posco-icon {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
         }
         
         @media print {
@@ -111,17 +109,17 @@
                     <div>
                         <h3 class="text-lg font-semibold text-gray-800 mb-4">주요 성과 현황</h3>
                         <div class="space-y-3">
-                            <div class="performance-indicator positive">
-                                <p><strong>삼성SDS:</strong> 클라우드 매출 20% 성장, MSP 사업 26% 성장으로 공공 시장 침투 가속화</p>
+                            <div class="summary-item">
+                                <p class="text-sm"><strong>삼성SDS:</strong> 클라우드 매출 20% 성장, MSP 사업 26% 성장으로 공공 시장 침투 가속화</p>
                             </div>
-                            <div class="performance-indicator positive">
-                                <p><strong>LG CNS:</strong> 클라우드&AI 매출 비중 59.5% 달성, 전년 대비 17.1% 성장세 지속</p>
+                            <div class="summary-item">
+                                <p class="text-sm"><strong>LG CNS:</strong> 클라우드&AI 매출 비중 59.5% 달성, 전년 대비 17.1% 성장세 지속</p>
                             </div>
-                            <div class="performance-indicator positive">
-                                <p><strong>현대오토에버:</strong> 북미 현대차 ERP 구축 프로젝트 영향으로 SI 사업 17.3% 성장</p>
+                            <div class="summary-item">
+                                <p class="text-sm"><strong>현대오토에버:</strong> 북미 현대차 ERP 구축 프로젝트 영향으로 SI 사업 17.3% 성장</p>
                             </div>
-                            <div class="performance-indicator negative">
-                                <p><strong>포스코DX:</strong> 제조 DX 전문화 추진 중이나 이차전지·철강 산업 약세로 전년비 실적 저조</p>
+                            <div class="summary-item">
+                                <p class="text-sm"><strong>포스코DX:</strong> 제조 DX 전문화 추진 중이나 이차전지·철강 산업 약세로 전년비 실적 저조</p>
                             </div>
                         </div>
                     </div>
@@ -129,17 +127,17 @@
                     <div>
                         <h3 class="text-lg font-semibold text-gray-800 mb-4">하반기 변화 방향</h3>
                         <div class="space-y-3">
-                            <div class="performance-indicator neutral">
-                                <p><strong>삼성SDS:</strong> 공공·금융 클라우드 침투 본격화, 소버린 클라우드 확대</p>
+                            <div class="summary-item">
+                                <p class="text-sm"><strong>삼성SDS:</strong> 공공·금융 클라우드 침투 본격화, 소버린 클라우드 확대</p>
                             </div>
-                            <div class="performance-indicator neutral">
-                                <p><strong>LG CNS:</strong> 에이전틱 AI 및 피지컬 AI 시장 진출, 소버린 AI 정책 대응</p>
+                            <div class="summary-item">
+                                <p class="text-sm"><strong>LG CNS:</strong> 에이전틱 AI 및 피지컬 AI 시장 진출, 소버린 AI 정책 대응</p>
                             </div>
-                            <div class="performance-indicator neutral">
-                                <p><strong>현대오토에버:</strong> 2026년 매출 3.6조원 목표, 구독형 사업모델 전환 추진</p>
+                            <div class="summary-item">
+                                <p class="text-sm"><strong>현대오토에버:</strong> 2026년 매출 3.6조원 목표, 구독형 사업모델 전환 추진</p>
                             </div>
-                            <div class="performance-indicator neutral">
-                                <p><strong>포스코DX:</strong> 캐나다 양극재 공장 스마트팩토리 등 해외 진출 지속</p>
+                            <div class="summary-item">
+                                <p class="text-sm"><strong>포스코DX:</strong> 캐나다 양극재 공장 스마트팩토리 등 해외 진출 지속</p>
                             </div>
                         </div>
                     </div>
@@ -254,9 +252,9 @@
                 </div>
 
                 <!-- 포스코DX -->
-                <div class="company-card bg-white rounded-lg p-6 card-shadow">
+                <div class="company-card posco-card bg-white rounded-lg p-6 card-shadow">
                     <div class="flex items-center mb-4">
-                        <div class="bg-red-600 p-2 rounded-lg mr-3">
+                        <div class="posco-icon p-2 rounded-lg mr-3">
                             <i class="fas fa-industry text-white"></i>
                         </div>
                         <h3 class="text-xl font-bold text-gray-800">포스코DX</h3>
@@ -414,7 +412,7 @@
                                 <p class="text-sm text-gray-700"><strong>공공 클라우드 시장:</strong> 삼성SDS와 LG CNS의 소버린 클라우드 경쟁이 어떤 형태로 변화할 것인지</p>
                             </div>
                             <div class="bg-gray-50 p-3 rounded">
-                                <p class="text-sm text-gray-700"><strong>AI 서비스 차별화:</strong> LG CNS 엑사원 모델의 시장 수용도가 증가할 것인지, 이는 사업 성과로 이어질지 </p>
+                                <p class="text-sm text-gray-700"><strong>AI 서비스 차별화:</strong> LG CNS 엑사원 모델의 시장 수용도가 증가할 것인지, 이는 사업 성과로 이어질지</p>
                             </div>
                             <div class="bg-gray-50 p-3 rounded">
                                 <p class="text-sm text-gray-700"><strong>글로벌 확장:</strong> 현대오토에버의 구독형 사업 모델 전환속도가 얼마나 빨리지고, 사업 실적 확대 속도가 빨라질 것인지</p>
